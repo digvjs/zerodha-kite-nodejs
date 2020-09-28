@@ -1,0 +1,26 @@
+{
+  "name": "trade.digvijay",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.0",
+    "http-errors": "~1.6.3",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "kiteconnect": "^3.1.0",
+    "morgan": "~1.9.1",
+    "randomstring": "^1.1.5"
+  }
+}

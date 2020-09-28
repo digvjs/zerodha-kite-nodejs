@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Welcome <%= user.user_name %></p>
+    <p>Email: <%= user.email %></p>
+    <p>User type: <%= user.user_type %></p>
+    <form action="/auth/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
+    <br />
+    <h2>Holdings</h2>
+    <hr />
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Exchange</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% holdings.forEach(function(holding) { %>
+            <tr>
+                <td><%= holding.tradingsymbol %></td>
+                <td><%= holding.exchange %></td>
+                <td><%= holding.quantity %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
